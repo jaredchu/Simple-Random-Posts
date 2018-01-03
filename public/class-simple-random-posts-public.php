@@ -103,9 +103,12 @@ class Simple_Random_Posts_Public {
     public function rewrite_render()
     {
         //@TODO: get this variable from setting, default is random
-        $path = '/random';
+        $paths = [
+            '/random',
+            '/random/'
+        ];
 
-        if ($_SERVER['REQUEST_URI'] != $path) {
+        if (!in_array($_SERVER['REQUEST_URI'],$paths)) {
             return;
         }
 

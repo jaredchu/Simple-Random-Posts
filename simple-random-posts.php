@@ -16,7 +16,7 @@
  * Plugin Name:       Simple Random Posts
  * Plugin URI:        https://jaredchu.com/wordpress/
  * Description:       Another WordPress plugin that select random url to redirect from posts, tags, categories.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Jared Chu
  * Author URI:        https://jaredchu.com/
  * License:           GPL-2.0+
