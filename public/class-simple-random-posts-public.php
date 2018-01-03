@@ -100,4 +100,15 @@ class Simple_Random_Posts_Public {
 
 	}
 
+    public function rewrite_render()
+    {
+        //@TODO: get this variable from setting, default is random
+        $path = '/random';
+
+        if ($_SERVER['REQUEST_URI'] != $path) {
+            return;
+        }
+
+        wp_redirect((new Generate_Random_URI())->generate());
+    }
 }

@@ -63,6 +63,7 @@ register_deactivation_hook( __FILE__, 'deactivate_simple_random_posts' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-simple-random-posts.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-generate-random-uri.php';
 
 /**
  * Begins execution of the plugin.
@@ -74,7 +75,6 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-simple-random-posts.php';
  * @since    1.0.0
  */
 function run_simple_random_posts() {
-
 	$plugin = new Simple_Random_Posts();
 	$plugin->run();
 
